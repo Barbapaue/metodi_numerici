@@ -1,4 +1,14 @@
 function [x1,xk,it]=newton(fname,fpname,x0,tolx,tolf,nmax)
+%x1 = soluzione
+%xk = vettore delle soluzioni
+%it = numero di iterazioni
+
+%fname = nome funzione
+%fpname = nome derivata prima (funzione con al derivata prima) (calcola il nuovo iterato come intersezione con l'asse delle x che passa per l'iterato precedente)
+%x0 = iterato iniziale
+%tolx = tolleranza sull'asse delle x
+%tolf = tolleranza sul valore della funzione
+%nmax = iterazioni massime
 
 fx0=fname(x0);
 dfx0=fpname(x0);
