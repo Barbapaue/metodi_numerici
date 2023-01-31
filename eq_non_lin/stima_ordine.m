@@ -1,4 +1,6 @@
 function ordine=stima_ordine(xk,iterazioni)
+    %xk = vettore degli iterati del nostro metodo (bisez,...)
+    %iterazioni = le iterazioni fatte
 p=zeros(iterazioni,1);
 
 for k=3:iterazioni-1
